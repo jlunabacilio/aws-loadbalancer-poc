@@ -2,8 +2,8 @@
 
 #### 1. Clone repository
 2. Run installation.sh script
-    * Give permissions chmod u+x installation.sh
-    * 2.2. Run it: bash installation.sh
+    * Give permissions to the script `chmod u+x installation.sh`
+    * 2.2. Run it: `bash installation.sh`
 3. Allow access to Nginx thourgh firewall using: `sudo ufw allow 'Nginx HTTP'` 
 4. If you want to check NGINX status, run: `systemctl status nginx`
 5. Go to node-app folder and build it: `npm run build`
@@ -16,6 +16,7 @@
     * Create a new file using `touch etc/sites-available/reverse-proxy` where you can edit `reverse-proxy` for name of you convenience.
     * Create a symlink between sites-available and sites-enabled folders with: `sudo ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/`. NOTE that you need to add full paths or won't work.
     * There, add next lines to the file and save:
+    
     ```
     server {
 
