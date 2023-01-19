@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          WebServer01
+          WebServer02
         </p>
         <a
           className="App-link"
